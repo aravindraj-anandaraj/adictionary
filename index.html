@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <h1>A-Dictionary</h1>
+        <div class="input-container">
+            <input id="word" type="text" placeholder="Enter word to search">
+            <button class="btn btn-primary" id="search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg> Search
+            </button>
+        </div>
+    </div>
+    <div id="content">
+        <div id="recent">
+            <div class="recent">
+                <h3>Recent</h3>
+                <ol id="recent-list">
+                </ol>
+            </div>
+        </div>
+        <div id="meaning">
+            <div id="partDef">
+                Showing results for :  
+                <select name="" id="partOfSpeech">
+                </select>
+            </div>
+            <div>
+                <ol id="noun">
+
+                </ol>
+            </div>
+            <div>
+                <ol id="verb">
+
+                </ol>
+            </div>
+        </div>
+        <div id="extra">
+            <div class="etymology">
+                <h3>Etymology</h3>
+                <p id="etymology"></p>
+            </div>
+            <div class="phonetics">
+                <h3>Phonetics</h3>
+                <ol id="phonetics">
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="./script.js"></script>
+</html>
